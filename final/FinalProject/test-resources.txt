@@ -1,0 +1,2 @@
+BookResource||Introduction to programing,The best book to learn programin,https://people.cs.aau.dk/~normark/oop-csharp/pdf/all.pdf,2024-04-09,483,Kurt, 
+AudioResource||Audio of the second class,Audio about programing of teacher Renzo,https://people.cs.aau.dk/~normark/oop-csharp/pdf/all.pdf,2024-04-09,130, 

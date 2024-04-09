@@ -3,14 +3,28 @@ public abstract class LearningResource
   private string _title;
   private string _description;
   private string _url;
-  private DateTime _creatingDate;
+  private string _creatingDate;
 
-  public LearningResource(string title, string description, string url, DateTime creatingDate)
+  private string _resourceType;
+
+  private string _resume;
+
+  public LearningResource(string title, string description, string url, string creatingDate)
   {
     _title = title;
     _description = description;
     _url = url;
     _creatingDate = creatingDate;
+  }
+
+  public string GetResourceType()
+  {
+    return _resourceType;
+  }
+
+  public void SetResourceType(string resourceType)
+  {
+    _resourceType = resourceType;
   }
 
   public string GetTitle()
@@ -29,11 +43,22 @@ public abstract class LearningResource
   }
 
 
-  public DateTime GetCreatingDate()
+  public string GetCreatingDate()
   {
     return _creatingDate;
   }
 
+  public string GetResume()
+  {
+    return _resume;
+  }
+
+  public void SetResume(string resume)
+  {
+    _resume = resume;
+  }
+
   public abstract void DisplayDetails();
   public abstract void Open();
+  public abstract string GetStringRepresentation();
 }
